@@ -1,0 +1,14 @@
+{
+    "users": [
+      { "id": 1, "name": "Alice", "dateOfBirth": "1990-05-15", "personality": ["Friendly", "Analytical"] },
+      { "id": 2, "name": "Bob", "dateOfBirth": "1985-12-25", "personality": ["Creative", "Empathetic"] },
+      { "id": 3, "name": "Charlie", "dateOfBirth": "2000-07-22", "personality": ["Energetic", "Logical"] }
+    ],
+    "columns": [
+      { "id": "id", "label": "ID" },
+      { "id": "name", "label": "Name" },
+      { "id": "dateOfBirth", "label": "Date of Birth" },
+      { "id": "personality", "label": "Personalities" }
+    ]
+  }
+  
