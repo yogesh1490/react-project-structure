@@ -39,7 +39,6 @@ A well-organized project structure enhances code clarity, facilitates scaling th
 
 To get started with this project, clone the repository and install the dependencies:
 
-```bash
 git clone https://github.com/yogesh1490/react-project-structure.git
 cd react-project-structure
 npm install
@@ -48,4 +47,5 @@ To start the development server:
 
 npm start
 
+![image](https://github.com/user-attachments/assets/ef8d8584-6a0b-422c-971d-de85baa550f5)
 
