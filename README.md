@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+# Project Structure (React JS)
+A well-organized project structure enhances code clarity, facilitates scaling the application, and ensures that developers can easily navigate and understand the codebase. Below is a suggested project structure for a React project using TypeScript:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Structure with TypeScript
 
-## Available Scripts
+![image](https://github.com/user-attachments/assets/2a971804-09fc-428b-b84f-127adfd9a50e)
+![image](https://github.com/user-attachments/assets/6d4cf398-391c-4dae-a37d-5a153e85ea46)
 
-In the project directory, you can run:
+## Explanation of Key Folders/Files
 
-### `npm start`
+- **components/**: Contains reusable UI components such as buttons, headers, etc.
+- **hooks/**: Holds custom hooks for reusable logic, such as authentication.
+- **pages/**: Includes components that represent different pages of your application, like Home or Login.
+- **services/**: Manages API calls. `api.ts` might include all your endpoints and functions to interact with the backend.
+- **utils/**: Stores utility functions and constants. `constants.ts` can hold fixed values like API URLs, while `helpers.ts` includes reusable functions.
+- **assets/**: Contains static files like images, fonts, and styles.
+- **mock.ts**: Keeps mock API responses for testing purposes.
+- **App.tsx**: The main application component.
+- **index.tsx**: The entry point for React.
+- **routes.tsx**: Manages application routes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Naming Conventions
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Folders**: Use kebab-case (all lowercase with hyphens) for folder names for consistency and readability. Example: `components`, `hooks`, `utils`, `services`, `context`.
 
-### `npm test`
+- **Files**:
+  - **PascalCase**: Use for components and classes. Example: `MyComponent.tsx`, `UserProfile.tsx`, `Dashboard.tsx`.
+  - **camelCase**: Use for utility functions, hooks, and lower-level files. Example: `myVariableName.ts`, `validateEmail.ts`, `userFetchData.ts`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Strings File**: If your project supports multiple languages or has many user-facing strings, consider adding a `strings.ts` file in the `utils/` folder.
 
-### `npm run build`
+- **Constants**: Store values that don’t change, such as API base URLs, status codes, or fixed options. Use uppercase letters with underscores. Example: `API_BASE_URL`, `STATUS_OK`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Variables**: Use camelCase for variable names and ensure they are meaningful. Example: `userName`, `isLoading`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Functions**: Use camelCase for function names, and ensure they are descriptive. Example: `calculateTotal`, `handleClick`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+To get started with this project, clone the repository and install the dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+git clone https://github.com/yogesh1490/react-project-structure.git
+cd react-project-structure
+npm install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+npm start
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![image](https://github.com/user-attachments/assets/ef8d8584-6a0b-422c-971d-de85baa550f5)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
