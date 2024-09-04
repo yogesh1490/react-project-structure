@@ -14,14 +14,14 @@ import {
     Grid,
     Chip,
 } from '@mui/material';
-import { useUser } from '../hooks/useUser';
+import { useHome } from '../hooks/useHome';
 import withLoading from '../hocs/withLoading';
 import STRINGS  from '../utils/strings';
 import CONSTANT from '../utils/constants';
 import { StatCard, StyledBox, StyledTableRow, StyledTableCell } from './Home.style';
 
 // Main component
-const HomeContent: React.FC = () => {
+const Home: React.FC = () => {
 
     // Use custom hook to get data
     const {
@@ -35,12 +35,12 @@ const HomeContent: React.FC = () => {
         handleChangePage,
         handleChangeRowsPerPage,
         paginatedUsers,
-    } = useUser();
+    } = useHome();
 
     return (
         <Container>
             <StyledBox>
-                <Typography variant="h4" gutterBottom>{STRINGS.HOME.DASHBOARD_TITLE}</Typography>
+                <Typography variant="h4" gutterBottom>{STRINGS.HOME.HOME_TITLE}</Typography>
                 <Grid container spacing={2} justifyContent="center">
                     <Grid item xs={12} sm={4} md={4}>
                         <StatCard>
@@ -113,4 +113,4 @@ const HomeContent: React.FC = () => {
     );
 };
 
-export default withLoading(HomeContent);
+export default withLoading(Home);

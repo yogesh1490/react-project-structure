@@ -1,4 +1,4 @@
-// src/hooks/useUser.ts
+// src/hooks/useHome.ts
 
 import React from 'react';
 import { useGetUsersQuery, useGetColumnsQuery } from '../redux/userApiSlice';
@@ -10,7 +10,7 @@ interface User {
     personality: string[];
   }
 
-export const useUser = () => {
+export const useHome = () => {
 
   const { data: usersData = [], isLoading: usersLoading } = useGetUsersQuery();
   const { data: columnsData = [], isLoading: columnsLoading } = useGetColumnsQuery();

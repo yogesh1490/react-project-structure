@@ -1,7 +1,7 @@
  const STRINGS = {
 
     HOME: {
-        DASHBOARD_TITLE: "Dashboard",
+        HOME_TITLE: "Home",
         OLDEST_USER_TITLE: "Oldest User",
         YOUNGEST_USER_TITLE: "Youngest User",
         TOTAL_USERS_TITLE: "Total Users",
